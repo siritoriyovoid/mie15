@@ -1,15 +1,29 @@
 .caixa {
-    width: 500px;
-    height: 200px;
-    padding: 50px;
-    background: #ffffff;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(167, 82, 82, 0.699);
-    text-align: left;
-    position: relative ;
-    overflow: hidden;
+  width: 500px;
+  height: 200px;
+  padding: 50px 50px 50px 15px;
+  background: #ffffff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(167, 82, 82, 0.699);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  animation: fadeIn 1.0s ease-in;
 }
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 body {
   font-family: Arial, sans-serif;
@@ -28,23 +42,49 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #111827;
+  background-color: #ad1536;
   border: none;
   border-radius: 5px;
+  box-shadow: #4d0313;
+  
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #374151;
-  transform: translateY(2px);
+  background-color: #e9375d;
+  transform: translateY(5px);
+
 }
+
+
+
+
+
 
 @font-face {
   font-family: KGMissSteward;
-  src: url(/fonts/KGMissSteward.otf);
+  src: url(fonts/KGMissSteward.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 .Miss {
-  font-family: 'KGMissSteward'
+  font-family: 'KGMissSteward', sans-serif;
+  font-size: 48px;
+
+}
+
+
+
+@font-face {
+  font-family: Singsong;
+  src: url(fonts/Singsong.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.Song {
+  font-family: 'Singsong', sans-serif;
+  font-size: 48px;
 
 }
