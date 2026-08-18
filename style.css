@@ -13,6 +13,36 @@
   animation: fadeIn 1.0s ease-in;
 }
 
+.caixa-sobre {
+  width: auto;
+  height: auto;
+  padding: 50px 50px 50px 15px;
+  background: #ffffff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(167, 82, 82, 0.699);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  animation: fadeIn 1.0s ease-in;
+}
+
+.caixa-s {
+  width: 700px;
+  height: auto;
+  padding: 50px 50px 50px 15px;
+  background: #ffffff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(167, 82, 82, 0.699);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  animation: fadeIn 1.0s ease-in;
+}
+
 
 @keyframes fadeIn {
   from {
@@ -42,7 +72,7 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #ad1536;
+  background-color: #f53f85;
   border: none;
   border-radius: 5px;
   box-shadow: #4d0313;
@@ -51,8 +81,9 @@ body {
 }
 
 .button:hover {
-  background-color: #e9375d;
+  background-color: #ff6d8d;
   transform: translateY(5px);
+  transition: transform 0.3s ease;
 
 }
 
@@ -87,4 +118,9 @@ body {
   font-family: 'Singsong', sans-serif;
   font-size: 48px;
 
+}
+
+.img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
